@@ -44,6 +44,8 @@ type
     Panel4: TPanel;
     MenuItem8: TMenuItem;
     btnGenerateUnit: TButton;
+    rdbArray: TRadioButton;
+    rdbTObjectList: TRadioButton;
     procedure btnVisualizeClick(Sender: TObject);
     procedure FormCreate(Sender: TObject);
     procedure FormDestroy(Sender: TObject);
@@ -419,6 +421,11 @@ end;
 procedure TMainForm.VisualizeClass;
 begin
   FChanged := false;
+
+  if rdbArray.IsChecked then
+    jm.ExportClass := TExporClass.TArray;
+  if rdbTObjectList.IsChecked then
+    jm.ExportClass := TExporClass.TObjectList;
 
   jm.Parse(memo1.Text, 'Root');
   jm.Visualize(tv, 'TreeViewItem1Style1');
