@@ -266,7 +266,7 @@ begin
     LList.Add('    Generated On   : ' + FormatDateTime('yyyy-mm-dd hh:nn:ss', now));
     LList.Add('');
     LList.Add('    Created By     : Petar Georgiev - 2014 (http://pgeorgiev.com) ');
-    LList.Add('    Adapted Web By : Marlon Nardi - 2016 (http://falconsistemas.com.br)');
+    LList.Add('    Adapted Web By : Marlon Nardi - 2016 (http://jsontodelphi.com)');
     LList.Add('*******************************************************************************}');
     LList.Add('');
     LList.Add('interface');

@@ -54,3 +54,4 @@ __history/
 *.~*
 __recovery/
 *.stat
+*.res
